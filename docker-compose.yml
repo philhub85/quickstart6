@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  6122:
+    image: 6122
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3009:3009
